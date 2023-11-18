@@ -1,0 +1,170 @@
+/* public/styles.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px;
+    background-color: #f5f5f5;
+  }
+  
+  h1, h2 {
+    color: #333;
+    text-align: center;
+  }
+  
+  #question-form, #paper-form, #output, #question-list {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input, button {
+    margin-bottom: 10px;
+    padding: 8px;
+    font-size: 14px;
+  }
+  
+  button {
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  #generatedPaper {
+    white-space: pre-wrap;
+    max-width: 500px;
+    overflow-x: auto;
+  }
+  
+  #questionList {
+    margin-top: 10px;
+    font-size: 14px;
+    max-width: 500px;
+  }
+  
+  /* Animation for button click */
+  @keyframes buttonClick {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /* Apply the animation to the button */
+  button:active {
+    animation: buttonClick 0.1s ease-out;
+  }
+  
+
+/* Header styles */
+header {
+    background: linear-gradient(wheat,lightgreen);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add box shadow */
+  }
+  
+  /* Add a container around the header */
+  header-container {
+    background-color: red; /* Change the background color as desired */
+    padding: 10px;
+    margin-bottom: 20px; /* Adjust margin as needed */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add box shadow */
+  }
+  
+  /* Animation for the h1 element */
+  header h1 {
+    opacity: 0;
+    animation: fadeIn 3s forwards;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .ka {
+    text-align: center;
+  }
+  
+  .karan {
+    font-family: 'Arial', sans-serif;
+    font-size: 2rem;
+    color: #333;
+    margin: 20px;
+    padding: 10px;
+    background-color: #4caf50;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: fadeIn 5s forwards;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .ka{
+    background: linear-gradient(5deg,wheat,rgb(0, 255, 76));
+  }
+  .karan{
+    background: linear-gradient(rgb(13, 13, 13), rgb(19, 0, 128));
+  color: wheat;
+  }
+
+  #question-form{
+background: linear-gradient(wheat,rgb(209, 209, 234));
+  }
+  .input{
+    
+    border-radius: 5px;
+    border-style:none;
+    border: 1px solid black;
+
+  }
+  .input:hover{
+    box-shadow: 2px 4px 6px black;
+    border-style: none;
+    border: 2px solid rgb(29, 28, 28);
+  }
+  .h3{
+    color: black;
+  }
+  .color{
+    background: linear-gradient(wheat,lightgreen);
+  }
+
+  #paper-form{
+    background: linear-gradient(wheat,rgb(209, 209, 234));
+  }
+  #output{
+    background: linear-gradient(wheat,lightgreen);
+  }

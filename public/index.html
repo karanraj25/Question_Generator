@@ -1,0 +1,68 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Question Paper Generator</title>
+</head>
+<body>
+    <div class="container">
+        <header-container>
+          <header>
+            <h1>Question Paper Generator Application</h1>
+            <br>
+            <h2>Create Question Papers Online</h2>
+            <br>
+            <h3 class="h3">It helps schools, coaching institutes, teachers and tutors create question papers and online tests in minutes.</h3>
+          </header>
+        </header-container>
+    </div>
+  
+  <div id="question-form">
+    <h2>Add Question</h2>
+    <label for="question">Question:</label>
+    <input class="input" type="text" id="question" name="question" required>
+    <label for="subject">Subject:</label>
+    <input class="input" type="text" id="subject" name="subject" required>
+    <label for="topic">Topic:</label>
+    <input class="input" type="text" id="topic" name="topic" required>
+    <label for="difficulty">Difficulty:</label>
+    <input class="input" type="text" id="difficulty" name="difficulty" required>
+    <label for="marks">Marks:</label>
+    <input class="input" type="number" id="marks" name="marks" required>
+    <button onclick="addQuestion()">Add Question</button>
+  </div>
+
+  
+<div class="color" id="question-list">
+    <h2 >All Questions</h2>
+    <button onclick="getAllQuestions()">Get All Questions</button>
+    <div id="questionList"></div>
+</div>
+
+  <div id="paper-form">
+    <h2>Generate Question Paper</h2>
+    <label  for="totalMarks">Total Marks:</label>
+    <input class="input" type="number" id="totalMarks" name="totalMarks" required>
+    <label for="difficultyPercentage">Difficulty Percentage:</label>
+    <input class="input" type="number" id="difficultyPercentage" name="difficultyPercentage" required>
+    <button id="generateButton">Generate Question Paper</button>
+
+  </div>
+
+  <div id="output">
+    <h2>Generated Question Paper:</h2>
+    <pre id="generatedPaper"></pre>
+  </div>
+
+  <div class="ka">
+    <h1 class="karan">
+      Made by Karan Raj
+    </h1>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
